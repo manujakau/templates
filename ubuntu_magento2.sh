@@ -105,8 +105,8 @@ sudo apt install -y curl git
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 cd /var/www/html
-#magento_account_public_key=2ba1703b934d39dd65eb93720d1670f1
-#magento_account_private_key=d3553d8096bd66d33fa6570b02dc39c6
+#magento_account_public_key=
+#magento_account_private_key=
 composer config --global http-basic.repo.magento.com ${MG2_ACC_PUBLIC_KEY} ${MG2_ACC_PRIVATE_KEY}
 sudo composer create-project --repository=https://repo.magento.com/ magento/project-community-edition magento2
 
